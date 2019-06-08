@@ -1,0 +1,9 @@
+.h1-style{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 300px;
+  margin-bottom: 21px;
+  font-family: "Roboto",sans-serif;
+  color: #505052;
+}
