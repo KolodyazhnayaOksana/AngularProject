@@ -1,14 +1,16 @@
 .home-work-card{
   height: auto;
   width: 300px;
-  padding: 10px;
   background: #D2D2D2;
   margin-left: 40px;
   margin-right: 40px;
   text-align: center;
   border-radius: 15px;
-  padding-left: 0!important;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .responsive-img{
   max-height: 171px;
@@ -20,18 +22,41 @@
 }
 .how-work-card__title{
   font-size: 1.5em!important;
-  padding-left: 1.5rem;
   line-height: 2.212rem!important;
-  margin: 3rem 10px 1.168rem 10px!important;
   color: #231F1F;
   font-family: "Roboto",sans-serif;
   text-align: center;
   height: 70px;
+  margin-bottom: 10px;
 }
 .card-text{
-  padding: .05rem 2.5rem 0;
+  padding: .0rem 1rem 0;
   color: #231F1F;
   font-size: 17px;
   font-family: "Roboto",sans-serif;
   text-align: center;
+}
+.how-work-card__img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.how-work-card__title_small{
+  margin-bottom: 0!important;
+  height: 40px;
+}
+@media all and (min-width: 766px) and (max-width: 1100px) {
+  .home-work-card{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 230px;
+  }
+  .how-work-card__title_small{
+
+  }
+}
+@media all and (max-width: 765px){
+  .home-work-card{
+    margin-bottom: 30px;
+  }
 }

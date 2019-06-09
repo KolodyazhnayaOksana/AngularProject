@@ -14,3 +14,15 @@
   font-family: "Roboto",sans-serif;
   color: #505052;
 }
+
+@media all and (max-width: 765px){
+  .home-work-card-group{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .h1-style{
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+}

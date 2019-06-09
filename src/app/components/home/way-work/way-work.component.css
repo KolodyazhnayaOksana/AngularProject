@@ -2,8 +2,15 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 300px;
+  margin-top: 387px;
   margin-bottom: 21px;
   font-family: "Roboto",sans-serif;
   color: #505052;
+}
+@media all and (max-width: 765px){
+  .h1-style{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }

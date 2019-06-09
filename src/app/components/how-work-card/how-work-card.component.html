@@ -1,6 +1,6 @@
 <div class="home-work-card">
-  <img class="responsive-img" src="{{image}}">
-  <div class="how-work-card__title">{{title}}</div>
+  <div class="how-work-card__img"><img class="responsive-img" src="{{image}}"></div>
+  <div class="how-work-card__title" [ngClass]="{'how-work-card__title_small': isSmall}">{{title}}</div>
   <p class="card-text">{{description}}</p>
 </div>
 

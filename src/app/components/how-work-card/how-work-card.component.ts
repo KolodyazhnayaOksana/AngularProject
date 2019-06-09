@@ -11,6 +11,7 @@ export class HowWorkCardComponent implements OnInit {
   @Input() image: string;
   @Input() title: string;
   @Input() description: string;
+  @Input() isSmall: boolean;
   ngOnInit() {
   }
 
