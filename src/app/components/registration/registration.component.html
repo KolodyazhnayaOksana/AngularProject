@@ -45,43 +45,22 @@
               </div>
             </div>
           </div>
-          <div class="form-row m-b-55">
-            <div class="name">Password</div>
-            <div class="value">
-              <div class="row row-space">
-                <div class="col-2">
-                  <div class="input-group-desc">
-                    <input class="input--style-5" type="password" formControlName="password"
-                           [ngClass]="{'input_invalid': registrationForm.get('password').touched && registrationForm.get('password').invalid}">
-                    <label class="label--desc">Password</label>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="input-group-desc">
-                    <input class="input--style-5" type="password" formControlName="confirmPassword"
-                           [ngClass]="{'input_invalid': registrationForm.get('confirmPassword').touched && registrationForm.get('confirmPassword').invalid}">
-                    <label class="label--desc">Confirm Password</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="form-row p-t-20">
             <label class="label label--block">What sex are you?</label>
             <div class="p-t-15">
               <label class="radio-container m-r-55">Male
-                <input type="radio" checked="checked" name="exist">
+                <input type="radio" formControlName="gender" value="male" checked name="gender">
                 <span class="checkmark"></span>
               </label>
               <label class="radio-container">Female
-                <input type="radio" name="exist">
+                <input type="radio" formControlName="gender" value="female" name="gender">
                 <span class="checkmark"></span>
               </label>
             </div>
           </div>
           <div>
             <button class="btn btn--radius-2 btn--red" type="submit" mat-button [disabled]="!registrationForm.valid">
-              Register
+              Send an application
             </button>
           </div>
         </form>

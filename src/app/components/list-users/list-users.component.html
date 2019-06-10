@@ -1,0 +1,4 @@
+<div *ngFor="let user of users" class="user-card-list">
+  <app-user-card [lastName]="user.last_name" [email]="user.email" [avatar]="user.avatar" [birthday]="birthday"></app-user-card>
+</div>
+<div class="button-more"><button class="button-more-users" (click)="more()">More</button></div>
